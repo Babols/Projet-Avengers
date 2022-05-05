@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        
+        <img src="image/Avengers-Symbole-768x434.png" class="logo">  
+        <a href="appel.html"><img src="image/bout.jpg" class="phone"></a>
+        
+     
+    <ul class="navbar__links">
+        <li class="navbar__link first"><a href="index.html"> Home </a></li>
+        <li class="navbar__link second"><a href="perso.html"> character </a></li>
+        <li class="navbar__link third"><a href="shop.html"> Shop </a></li>
+        <li class="navbar__link four"><a href="recrute.html"> Recruitment</a></li>
+    </ul>
+       <button class="burger">
+           <span class="bar"></span>
+       </button>
+    </nav>  
+<div class="container">
+        <div class="title">
+        <video src="image/aveng.WebM" class="movie" autoplay loop muted> </video>
+        <h1 class="blackwhite"> The Avengers </h1>
+        </div>
+
+        
+        <h2>News</h2>
+        <div class="New">
+        <div class="annuel gray">
+            <div class="int">
+                <img src="image/course.jpg" class="im course">
+                <h3>The annual race</h3>
+                <p>La course annuel des avengers a été organisé comme chaque année ce premier week-end de mai !</p>
+            </div>
+        </div>
+        <div class="marteau gray">
+            <div class="int">
+                <img src="image/match.png" alt="" class="im thor">
+                <h3> Basketball </h3>
+                <p> Tournoi de basketball organisé par Captain America et Spiderman avec les jeunes de quartier !</p>
+            </div>
+        </div>
+        <div class="musik gray">
+            <div class="int">
+                <img src="image/groots.jpg" alt="" class="im groot">
+                <h3> Groot Party</h3>
+                <p> Soirée dansante groot pour une folle soirée !</p>
+            </div>
+        </div>
+        <div class="chat gray">
+            <div class="int">
+                <img src="image/spider-man-chat.jpg" alt="" class="im chaton">
+                <h3>Rescue</h3>
+                <p>Spiderman sauve un chat coincé dans un arbre !</p>
+            </div>
+        </div>
+        <div class="bouclier gray">
+            <div class="int">
+                <img src="image/Jack-Black-Captain-America.jpg" alt="" class="im jack">
+                <h3> Jack again Winner !</h3>
+                <p> Le gagnant de l'épreuve du lancé de bouclier organisé par Captain est Jack !! </p>
+            </div>
+        </div>
+        <div class="concour gray">
+            <div class="int">
+                <img src="image/1fcb255962aca3e2b868f824ec81ca87.jpg" alt="" class="im ">
+                <h3>Jack Winner !</h3>
+                <p>Jack remporte le concour du lancé de marteau, organisé par Thor et Rocket !</p>
+            </div>  
+        </div>  
+        <div class="loki gray">
+            <div class="int">
+                <img src="image/get loki.jpg" alt="" class="im get">
+                <h3> DJ Get Loki</h3>
+                <p>DJ get Loki au platine ce samedi 9 Avril !</p>
+            </div>
+        </div>
+         
+    </div>
+</div>
+    <script>
+  function toggleMenu () {  
+  const navbar = document.querySelector('.navbar');
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', (e) => {    
+    navbar.classList.toggle('show-nav');
+  });    
+}
+toggleMenu();
+    </script>
 </body>
 </html>
