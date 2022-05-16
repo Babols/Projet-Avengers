@@ -3,6 +3,19 @@
     margin: 0;
     padding: 0;
 }
+.background{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    }
+
+h3 {
+    font-size: 1rem;
+}
 ul {
     list-style: none;
 }
@@ -118,6 +131,140 @@ ul {
      width: 60px;
 }
 
+h1 {
+    color: antiquewhite;
+    margin: 45px;
+    font-size: xx-large;
+}
+.reduc{
+    margin-left: 45%;
+    
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+}
+
+.elements{
+    display: flex;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+   
+}
+
+.element > img{
+    width: 100%;
+    height: 40vh;
+}
+.sold {
+    height: 40vh;
+    width: 100%;
+}
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav-droite{
+    right: 0;
+}
+
+.ima {
+    width: 200px;
+    height: 200px;
+    border-radius: 35px;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    overflow: hidden;
+    margin: 70px auto 0;
+}
+.center {
+    width: 300px;
+    margin: 25px;
+    text-align: center;
+    background-color: darkgray;
+    padding: 12px;
+    transition: transform .4s;
+    border-radius: 35px;
+    
+}
+.center:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+  }
+  footer {
+    width: 100%;
+    background-color: #000000b0;
+    color: white;
+    border-top: 1px solid black;
+  }
+
+.liste-media{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+
+ .footer-service{
+    display: flex;
+    align-items:center;
+    margin-left: 15px;
+    flex-wrap: wrap;
+  
+ }
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    transition-duration: 1s;
+    transition-property: transform;
+  }
+  .icon:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+  }
+.liste-media a {
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.liste-media p{
+    margin-left: 13px;
+    color: white;
+    margin-top: 5px;
+    font-size: 13px;
+}
+h4{
+
+}
 @media (min-width:768px){
     .burger {
         display: none;
@@ -149,5 +296,13 @@ ul {
 }
     .phone {
         margin-right: 80vh;
+    }
+    main{
+        width: 60%;
+    }
+}
+@media (min-width:1024px) {
+    main{
+        width: 40%;    
     }
 }

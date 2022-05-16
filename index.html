@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <video src="image/pexels-rostislav-uzunov-5453622.mp4" class="background" autoplay loop muted></video>
     <nav class="navbar">
-        
         <img src="image/Avengers-Symbole-768x434.png" class="logo">  
         <a href="appel.html"><img src="image/bout.jpg" class="phone"></a>
         
@@ -32,50 +32,50 @@
 
         
         <h2>News</h2>
-        <div class="New">
-        <div class="annuel gray">
+        <div class="New reveal">
+        <div class="annuel gray reveal-1">
             <div class="int">
                 <img src="image/course.jpg" class="im course">
                 <h3>The annual race</h3>
                 <p>La course annuel des avengers a été organisé comme chaque année ce premier week-end de mai !</p>
             </div>
         </div>
-        <div class="marteau gray">
+        <div class="marteau gray reveal-2">
             <div class="int">
                 <img src="image/match.png" alt="" class="im thor">
                 <h3> Basketball </h3>
                 <p> Tournoi de basketball organisé par Captain America et Spiderman avec les jeunes de quartier !</p>
             </div>
         </div>
-        <div class="musik gray">
+        <div class="musik gray reveal-3">
             <div class="int">
                 <img src="image/groots.jpg" alt="" class="im groot">
                 <h3> Groot Party</h3>
-                <p> Soirée dansante groot pour une folle soirée !</p>
+                <p> Soirée dansante groot pour une folle soirée ! Jusqu'au bout de la nuit et plus encore !</p>
             </div>
         </div>
-        <div class="chat gray">
+        <div class="chat gray reveal-4">
             <div class="int">
                 <img src="image/spider-man-chat.jpg" alt="" class="im chaton">
                 <h3>Rescue</h3>
                 <p>Spiderman sauve un chat coincé dans un arbre !</p>
             </div>
         </div>
-        <div class="bouclier gray">
+        <div class="bouclier gray reveal-5">
             <div class="int">
-                <img src="image/Jack-Black-Captain-America.jpg" alt="" class="im jack">
+                <img src="image/Jack-Black-Captain-America1.jpg" alt="" class="im jack">
                 <h3> Jack again Winner !</h3>
                 <p> Le gagnant de l'épreuve du lancé de bouclier organisé par Captain est Jack !! </p>
             </div>
         </div>
-        <div class="concour gray">
+        <div class="concour gray reveal-6">
             <div class="int">
                 <img src="image/1fcb255962aca3e2b868f824ec81ca87.jpg" alt="" class="im ">
                 <h3>Jack Winner !</h3>
                 <p>Jack remporte le concour du lancé de marteau, organisé par Thor et Rocket !</p>
             </div>  
         </div>  
-        <div class="loki gray">
+        <div class="loki gray reveal-7">
             <div class="int">
                 <img src="image/get loki.jpg" alt="" class="im get">
                 <h3> DJ Get Loki</h3>
@@ -85,6 +85,25 @@
          
     </div>
 </div>
+
+<footer>
+<div class="contenu-footer">
+<div class="bloc footer-service">
+    <h4>Nos réseaux :</h4>
+    <ul class="liste-media">
+        <li><a href="#"> <img src="image/facebook.png" alt="" class="icon"> <p class="para"> facebook </p></a></li>
+        <li><a href="#"> <img src="image/twitter.png" alt="" class="icon"> <p class="para"> Twitter </p></a></li>
+        <li><a href="#"> <img src="image/insta.png" alt="" class="icon"> <p class="para"> Instagram</p> </a></li>
+        <li><a href="#"> <img src="image/youtube.png" alt="" class="icon"> <p class="para"> Youtube </p></a></li>
+        <li><a href="#"> <img src="image/snap.png" alt="" class="icon"> <p class="para"> Snapchat </p></a></li>
+    </ul>
+</div>
+
+</div>
+
+
+</footer>
+
     <script>
   function toggleMenu () {  
   const navbar = document.querySelector('.navbar');
@@ -94,6 +113,29 @@
   });    
 }
 toggleMenu();
+
+
+const ratio = 0.1
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratio
+}
+const handleIntersect = function(entries, observer){
+    console.log(entries)
+  entries.forEach(function (entry){
+    if (entry.intersectionRatio > ratio){
+      entry.target.classList.add('reveal-visible')
+      observer.unobserver(entry.target)
+   
+    }
+  })
+}
+
+const observer = new IntersectionObserver(handleIntersect, options)
+document.querySelectorAll('.reveal').forEach(function (r){
+  observer.observe(r)
+})
     </script>
 </body>
 </html>
