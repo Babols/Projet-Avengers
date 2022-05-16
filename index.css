@@ -8,8 +8,8 @@ body {
     color: beige; 
 }
 .background{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     position: fixed;
     right: 0;
@@ -165,7 +165,7 @@ p {
     margin-top: 5px;
 }
     
-.annuel, .marteau, .musik, .chat, .bouclier, .loki, .concour {
+.annuel, .marteau, .musik, .chat, .bouclier, .loki, .concour, .dev, .hopi{
     margin-top: 30px;
 }
 .int {
@@ -193,19 +193,25 @@ p {
     transition-delay: .1s;
 }
 .reveal-visible .reveal-3{
-    transition-delay: .2s;
-}
-.reveal-visible .reveal-4{
     transition-delay: .3s;
 }
-.reveal-visible .reveal-5{
-    transition-delay: .4s;
-}
-.reveal-visible .reveal-6{
+.reveal-visible .reveal-4{
     transition-delay: .5s;
 }
+.reveal-visible .reveal-5{
+    transition-delay: .7s;
+}
+.reveal-visible .reveal-6{
+    transition-delay: .9s;
+}
 .reveal-visible .reveal-7{
-    transition-delay: .6s;
+    transition-delay: 1.1s;
+}
+.reveal-visible .reveal-8{
+    transition-delay: 1.3s;
+}
+.reveal-visible .reveal-9{
+    transition-delay: 1.5s;
 }
 footer {
     width: 100%;
@@ -251,10 +257,6 @@ footer {
     margin-top: 5px;
     font-size: 13px;
 }
-h4{
-
-}
-
 
 @media (min-width:768px){
     .burger {
@@ -297,7 +299,7 @@ video {
         display: grid;
         align-items: center;
         grid-template-columns: repeat(2, 49%);
-        grid-template-rows: repeat(4, 23%);   
+        grid-template-rows: repeat(5, 18%);   
         gap: 10px;  
         margin: 10px;
     }
@@ -330,7 +332,14 @@ video {
        grid-column: 1 / 2;
        grid-row: 4 / 5;
 }
-
+    .dev {
+       grid-column: 2 / 3;
+       grid-row: 4 / 5;
+    }
+    .hopi{
+        grid-column: 1 / 2;
+       grid-row: 5 / 6;
+    }
 .im {
     height: 230px;
 }
@@ -375,5 +384,12 @@ video {
        grid-column: 1 / 2;
        grid-row: 3 / 4;
 }
-   
+   .dev {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+   }
+   .hopi {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+   }
 }

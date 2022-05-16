@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="merci.css">
+</head>
+<body>
+    <nav class="navbar">
+        
+        <img src="image/Avengers-Symbole-768x434.png" class="logo">  
+        <a href="appel.html"><img src="image/bout.jpg" class="phone"></a>
+        
+     
+    <ul class="navbar__links">
+        <li class="navbar__link first"><a href="index.html"> Home </a></li>
+        <li class="navbar__link second"><a href="perso.html"> character </a></li>
+        <li class="navbar__link third"><a href="shop.html"> Shop </a></li>
+        <li class="navbar__link four"><a href="recrute.html"> Recruitment</a></li>
+    </ul>
+       <button class="burger">
+           <span class="bar"></span>
+       </button>
+    </nav> 
+
+<div class="text">
+    <div class="center">
+        <h1>Welcome Héro !</h1>
+        <img src="image/0618d732abc5a9c0caa1af50e4b45762.gif" class="photo">
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="contenu-footer">
+        <div class="bloc footer-service">
+            <h4>Nos réseaux :</h4>
+            <ul class="liste-media">
+                <li><a href="#"> <img src="image/facebook.png" alt="" class="icon"> <p class="para"> facebook </p></a></li>
+                <li><a href="#"> <img src="image/twitter.png" alt="" class="icon"> <p class="para"> Twitter </p></a></li>
+                <li><a href="#"> <img src="image/insta.png" alt="" class="icon"> <p class="para"> Instagram</p> </a></li>
+                <li><a href="#"> <img src="image/youtube.png" alt="" class="icon"> <p class="para"> Youtube </p></a></li>
+                <li><a href="#"> <img src="image/snap.png" alt="" class="icon"> <p class="para"> Snapchat </p></a></li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleMenu () {  
+            const navbar = document.querySelector('.navbar');
+            const burger = document.querySelector('.burger');
+            burger.addEventListener('click', (e) => {    
+              navbar.classList.toggle('show-nav');
+            });    
+            }
+            toggleMenu();
+              </script>
+</body>
+</html>
