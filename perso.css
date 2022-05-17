@@ -165,7 +165,6 @@ p {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-   
 }
 
 .lightbox {
@@ -240,9 +239,7 @@ p {
     margin: 7px;
     align-items: center;   
 }
-h4{
 
-}
 .reveal{
   opacity: 0;
   transform: translateX(-300px);
@@ -310,3 +307,12 @@ h4{
       }
     }
 
+    @media (max-width:768px) {
+      .liste-media p{ 
+        display: none;
+      }
+      .icon {
+        margin-left:0;
+        margin-bottom: 5px;
+      }
+    }

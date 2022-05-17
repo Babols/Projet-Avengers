@@ -229,3 +229,12 @@ h1 {
         margin-right: 80vh;
     }
 }
+@media (max-width:768px) {
+    .liste-media p{ 
+      display: none;
+    }
+    .icon {
+      margin-left:0;
+      margin-bottom: 5px;
+    }
+  }

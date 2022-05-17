@@ -393,3 +393,12 @@ video {
     grid-row: 3 / 4;
    }
 }
+@media (max-width:768px) {
+    .liste-media p{ 
+      display: none;
+    }
+    .icon {
+      margin-left:0;
+      margin-bottom: 5px;
+    }
+  }

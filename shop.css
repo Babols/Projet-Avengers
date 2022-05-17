@@ -225,6 +225,7 @@ main{
     background-color: #000000b0;
     color: white;
     border-top: 1px solid black;
+    
   }
 
 .liste-media{
@@ -306,3 +307,12 @@ main{
         width: 40%;    
     }
 }
+@media (max-width:768px) {
+    .liste-media p{ 
+      display: none;
+    }
+    .icon {
+      margin-left:0;
+      margin-bottom: 5px;
+    }
+  }
