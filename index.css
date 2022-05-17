@@ -142,17 +142,26 @@ video {
 h1 {
     text-align: center;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 5rem;
+    font-family: 'AVENGEANCE HEROIC AVENGER BI';
     }   
 .blackwhite { 
     background-image: linear-gradient(to right, rgb(2, 2, 2), rgb(76, 72, 64) 50%, rgb(248, 243, 243)); color: transparent; -webkit-background-clip: text; background-clip: text; 
 }   
+@font-face {
+    font-family: 'AVENGEANCE HEROIC AVENGER BI';
+    src: url(image/AVENGEANCE\ HEROIC\ AVENGER\ BI.ttf);
+  }
 h2 {
     margin: 15px;
+    font-family: 'AVENGEANCE HEROIC AVENGER BI';
+    font-size: 2.5rem;
+    color: antiquewhite;
 }
 h3 {
     font-size: 16px;
     margin-top: 5px;
+    font-family: sans-serif;
 }   
 .im {
     width: 100%;
@@ -163,6 +172,7 @@ h3 {
 p {
     font-size: 12px;
     margin-top: 5px;
+    font-family: sans-serif;
 }
     
 .annuel, .marteau, .musik, .chat, .bouclier, .loki, .concour, .dev, .hopi{
@@ -170,7 +180,6 @@ p {
 }
 .int {
     padding: 9px;
-  
 }
 
 .gray {

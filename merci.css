@@ -187,9 +187,14 @@ img{
     width: 180px;
     height: 180px;
 }
+@font-face {
+  font-family: 'AVENGEANCE HEROIC AVENGER BI';
+  src: url(image/AVENGEANCE\ HEROIC\ AVENGER\ BI.ttf);
+}
 h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-family: 'AVENGEANCE HEROIC AVENGER BI';
+    font-size: 3.5rem;
 }
 .center {
     display: flex;

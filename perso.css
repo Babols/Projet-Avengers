@@ -21,11 +21,36 @@ main {
   bottom: 0;
   z-index: -1;
   }
+  @font-face {
+    font-family: 'AVENGEANCE HEROIC AVENGER BI';
+    src: url(image/AVENGEANCE\ HEROIC\ AVENGER\ BI.ttf);
+  }
 h1 {
   margin: 20px;
-  font-weight: bold;
+  font-family: 'AVENGEANCE HEROIC AVENGER BI';
+  font-size: 2.5rem;
 }
 
+@font-face {
+  font-family: 'heroesassemble3d';
+  src: url(image/heroesassemble3d.ttf);
+}
+h2{
+  font-family: 'heroesassemble3d';
+  font-size: 2.5rem;
+}
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+}
+#scroll_to_top img {
+  width: 35px;
+ 
+}
 ul {
     list-style: none;
 }
@@ -159,6 +184,7 @@ ul {
 p {
   text-align: center;
   margin: 15px;
+  font-family: sans-serif;
 }
 .center {
     display: flex;
@@ -242,7 +268,7 @@ p {
 
 .reveal{
   opacity: 0;
-  transform: translateX(-300px);
+  transform: translateX(-30px);
 }
 .reveal-visible{
   opacity: 1;

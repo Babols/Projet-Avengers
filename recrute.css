@@ -3,22 +3,28 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     background-image: url(image/image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     color: black;
-  
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
 }
-
 ul {
     list-style: none;
 }
+@font-face {
+  font-family: 'AVENGEANCE HEROIC AVENGER BI';
+  src: url(image/AVENGEANCE\ HEROIC\ AVENGER\ BI.ttf);
+}
 h2 {
     margin: 15px;
+    font-family: 'AVENGEANCE HEROIC AVENGER BI';
+    font-size: 2.5rem;
 }
 .navbar {
   color: #FFF;
@@ -55,7 +61,6 @@ h2 {
 .navbar__link {
   transform: translateX(101%);
   padding:0 5px;
-  
 }
 .show-nav .navbar__link {
   transform: translateX(0);
@@ -129,14 +134,12 @@ h2 {
    height: 60px;
    width: 60px;
 }
-
 label {
     line-height: 2;
 }
 .pseudo, .pouvoir, .email, .message {
     width: 80vw;
 }    
-
 .pseudo, .pouvoir, .email{
 height: 25px;
 }
@@ -144,9 +147,9 @@ height: 25px;
     height: 120px;
     resize: none;
 }
-/* .contact {
-  height: 100vh;
-}   */
+ /* .contact {
+  height: 80vh;
+}    */
 form {
     margin: 35px;
     font-weight: bold;
@@ -176,20 +179,17 @@ input[type="submit"] {
     border-top: 1px solid black;
     /* margin-top: 80px; */
   }
-
 .liste-media{
     display: flex;
     margin-top: 5px;
     margin-bottom: 5px;
     flex-wrap: wrap;
   }
-
  .footer-service{
     display: flex;
     align-items:center;
     margin-left: 15px;
     flex-wrap: wrap;
-  
  }
   .icon {
     width: 30px;
@@ -202,7 +202,6 @@ input[type="submit"] {
     cursor: pointer;
     transform: rotate(360deg);
   }
-  
 .liste-media a {
     text-decoration: none;
     display: flex;
@@ -243,7 +242,6 @@ input[type="submit"] {
         justify-content: flex-end;
         height: auto;
         position: initial;
-
 }
     .phone {
         margin-right: 80vh;
