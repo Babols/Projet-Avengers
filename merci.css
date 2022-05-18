@@ -46,7 +46,11 @@ ul {
     padding: 1rem;
     font-size: 1.6rem;
     transition: all .4s ease-in-out;
-}
+    display: none;
+  }
+  .show-nav .navbar__link > a {
+  display: inherit;
+  }
 .navbar__link {
     transform: translateX(101%);
     padding:0 5px;
@@ -131,7 +135,6 @@ footer {
     background-color: #000000b0;
     color: white;
     border-top: 1px solid black;
-    margin-top: 192px;
   }
 
 .liste-media{
@@ -200,6 +203,9 @@ h1 {
     flex-direction: column;
 }
 @media (min-width:768px){
+  .navbar__link > a {
+    display: inherit;
+    }
     .burger {
         display: none;
     }

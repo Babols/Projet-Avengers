@@ -68,6 +68,10 @@ ul {
     padding: 1rem;
     font-size: 1.6rem;
     transition: all .4s ease-in-out;
+    display: none;
+}
+.show-nav .navbar__link > a {
+display: inherit;
 }
 .navbar__link {
     transform: translateX(101%);
@@ -287,6 +291,9 @@ main{
 }
 
 @media (min-width:768px){
+    .navbar__link > a {
+        display: inherit;
+        }
     .burger {
         display: none;
     }

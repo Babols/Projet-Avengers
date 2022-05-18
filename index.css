@@ -45,6 +45,7 @@ ul {
 }
 .show-nav .navbar__links { 
      width:100vw; 
+     
 }
 .navbar__link > a {
     color: #FFF;
@@ -53,7 +54,10 @@ ul {
     padding: 1rem;
     font-size: 1.6rem;
     transition: all .4s ease-in-out;
-    
+    display: none;
+}
+.show-nav .navbar__link > a {
+display: inherit;
 }
 .navbar__link {
     transform: translateX(101%);
@@ -67,6 +71,7 @@ ul {
 .navbar__link > a:hover {
     padding-left: 2rem;
     letter-spacing: 5px;
+    
 }
 .burger {
     display:block;
@@ -273,6 +278,9 @@ footer {
 }
 
 @media (min-width:768px){
+    .navbar__link > a {
+    display: inherit;
+    }
     .burger {
         display: none;
     }
