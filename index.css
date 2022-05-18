@@ -147,7 +147,7 @@ h1 {
     }   
 .blackwhite { 
     background-image: linear-gradient(to right, rgb(2, 2, 2), rgb(76, 72, 64) 50%, rgb(248, 243, 243)); color: transparent; -webkit-background-clip: text; background-clip: text; 
-    margin-top: 33px;
+    margin-top: 50px;
 }   
 @font-face {
     font-family: 'AVENGEANCE HEROIC AVENGER BI';
