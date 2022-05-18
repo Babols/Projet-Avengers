@@ -40,6 +40,8 @@ ul {
     right: 0;
     background-color: #000;
     transition: all .5s ease-in-out;
+   
+    
 }
 .show-nav .navbar__links { 
      width:100vw; 
@@ -51,10 +53,12 @@ ul {
     padding: 1rem;
     font-size: 1.6rem;
     transition: all .4s ease-in-out;
+    
 }
 .navbar__link {
     transform: translateX(101%);
     padding:0 5px;
+    
     
 }
 .show-nav .navbar__link {
